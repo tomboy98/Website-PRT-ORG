@@ -1,4 +1,8 @@
-Install Docker Pipeline Plugin
+sudo apt install docker.io -y #Docker installation
+sudo apt update
+sudo apt install openjdk-11-jdk -y  #JAVA Installation
+ansible -m ping -all
+Install Docker Pipeline Plugin - In jenkins
 Correct credentials should be configured
 #Docker permissions added in KMaster
 sudo groupadd docker
