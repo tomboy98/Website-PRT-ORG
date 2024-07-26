@@ -1,0 +1,7 @@
+---
+- name: Installations on Jenkins Master
+  hosts: kmaster 
+  become: true
+  tasks:
+    - name: Executing script on jenkins master
+      script: script1.sh
