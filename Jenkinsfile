@@ -28,7 +28,7 @@ pipeline {
             steps {
                 script {
                     // Push Docker image to Docker Hub
-                    docker.withRegistry('https://index.docker.io/v1/', '0e8d2278-63bf-40f0-bb4f-7b3dc5334de6) {
+                    docker.withRegistry('https://index.docker.io/v1/', '0e8d2278-63bf-40f0-bb4f-7b3dc5334de6') {
                         docker.image(DOCKER_IMAGE).push('latest')
                     }
                 }
